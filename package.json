@@ -1,19 +1,20 @@
 {
   "name": "react-native-mock-render",
-  "version": "0.1.9",
+  "version": "0.1.0",
   "description": "A fork of react-native-mock that renders components",
   "main": "build/react-native.js",
   "scripts": {
-    "prepublish": "npm run build",
+    "clean": "rm -rf build",
     "test": "npm run lint && npm run mocha",
     "mocha": "mocha --require test/setup-tests.js --require babel-core/register 'test/**/*.js'",
     "mocha:watch": "npm run test -- --watch",
-    "build": "babel src --out-dir build",
-    "lint": "./node_modules/.bin/eslint 'src/' 'test/' 'mock.js'"
+    "build": "./node_modules/.bin/babel src --out-dir build",
+    "lint": "./node_modules/.bin/eslint 'src/' 'test/' 'mock.js'",
+    "postinstall": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Root-App/react-native-mock-render.git"
+    "url": "git@github.com:SocialMediaEmotions/react-native-mock-render.git"
   },
   "keywords": [
     "react",
@@ -23,10 +24,6 @@
   ],
   "author": "Root Insurance Co. Dev Team <devs@joinroot.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Root-App/react-native-mock-render/issues"
-  },
-  "homepage": "https://github.com/Root-App/react-native-mock-render",
   "devDependencies": {
     "babel-cli": "6.9.0",
     "babel-core": "6.9.0",
