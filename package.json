@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Root-App/react-native-mock-render.git"
+    "url": "git@github.com:SocialMediaEmotions/react-native-mock-render.git"
   },
   "keywords": [
     "react",
@@ -25,10 +25,6 @@
   ],
   "author": "Root Insurance Co. Dev Team <devs@joinroot.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Root-App/react-native-mock-render/issues"
-  },
-  "homepage": "https://github.com/Root-App/react-native-mock-render",
   "devDependencies": {
     "babel-cli": "6.9.0",
     "babel-core": "6.9.0",
