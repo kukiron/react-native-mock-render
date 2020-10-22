@@ -4,12 +4,14 @@
   "description": "A fork of react-native-mock that renders components",
   "main": "build/react-native.js",
   "scripts": {
+    "clean": "rm -rf build",
     "prepublish": "npm run build",
     "test": "npm run lint && npm run mocha",
     "mocha": "mocha --require test/setup-tests.js --require babel-core/register 'test/**/*.js'",
     "mocha:watch": "npm run test -- --watch",
     "build": "babel src --out-dir build",
-    "lint": "./node_modules/.bin/eslint 'src/' 'test/' 'mock.js'"
+    "lint": "./node_modules/.bin/eslint 'src/' 'test/' 'mock.js'",
+    "postinstall": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
