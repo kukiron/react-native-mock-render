@@ -10,7 +10,7 @@
     "mocha:watch": "npm run test -- --watch",
     "build": "babel src --out-dir build",
     "lint": "./node_modules/.bin/eslint 'src/' 'test/' 'mock.js'",
-    "postinstall": "npm install && npm run clean && npm run build"
+    "postinstall": "node -e \"if (!require('fs').existsSync('node_modules')) require('child_process').execSync('npm install')\" && npm run build"
   },
   "repository": {
     "type": "git",
