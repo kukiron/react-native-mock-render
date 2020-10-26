@@ -24,8 +24,8 @@
   "author": "Root Insurance Co. Dev Team <devs@joinroot.com>",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "6.9.0",
-    "babel-core": "6.9.0",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
     "babel-eslint": "10.0.2",
     "babel-preset-airbnb": "2.0.0",
     "babel-preset-react-native": "1.8.0",

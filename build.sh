@@ -9,4 +9,4 @@ if [ ! -d "${DIRECTORY}" ]; then
   npm install
 fi
 
-rm -rf build && ./node_modules/.bin/babel src --out-dir build
+rm -rf build && babel src --out-dir build
